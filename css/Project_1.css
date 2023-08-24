@@ -1,0 +1,80 @@
+body{
+    text-align:center !important ;
+    font-family: 'Mynerve', cursive !important ;
+}
+
+.background {
+    background-image: url('../media/tile.jpg');
+    background-repeat: repeat ;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+ }
+
+.formBox{
+    background-image: url('../media/formbg.jpg');
+    background-repeat: repeat-y ;
+    background-position: center;
+    height: 200px;
+    padding-top: 15px ;
+}
+
+input{
+    padding: 3px;
+    text-align: center;
+}
+input#time, #date{
+margin: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.note{
+    background-image: url('../media/notebg.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 250px;
+    word-break: break-all;
+}
+
+.note:last-child {
+    animation: fadein 2s ease forwards;
+}
+    @keyframes fadein {
+      0%{opacity: 0;}
+      100%{opacity: 100%;}
+} 
+
+.btn{
+    margin-left: 130px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.btn:hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+.Date{
+    margin-left: 10px;
+    position: absolute;
+}
+
+.Time{
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.text{
+    width: 160px;
+    height: 150px;
+    margin-left: 10px;
+    overflow:auto;
+}
